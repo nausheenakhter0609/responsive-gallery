@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image gallery</title>
+    <link rel="stylesheet" href="lightbox.css">
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+            box-sizing:border-box;
+            font-family:'poppins',sans-serif;
+        }
+        h1{background-color: darkcyan;}
+        .container{
+            width: 100%;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            padding:50px 8%;
+        }
+        .gallery{
+            display:grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            grid-gap: 30px;
+        }
+        .gallery img{
+            width:100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">Image Gallery</h1>
+  <div class="container">
+    <div class="gallery">
+        <a href="photos/Taj-Mahal.jpg" data-lightbox="models" data-title="caption1"> <img src="photos/Taj-Mahal.jpg"></a>
+        <a href="photos/red fort.webp" data-lightbox="models" data-title="caption2"><img src="photos/red fort.webp"></a>
+        <a href="photos/qutub minar.jpg" data-lightbox="models" data-title="caption3"> <img src="photos/qutub minar.jpg"></a>
+        <a href="photos/lotus  temple.jpg" data-lightbox="models" data-title="caption4"><img src="photos/lotus  temple.jpg"></a>
+        <a href="photos/india gate.jpg" data-lightbox="models" data-title="caption5"> <img src="photos/india gate.jpg"></a>
+        <a href="photos/golden temple.webp" data-lightbox="models" data-title="caption6"><img src="photos/golden temple.webp"></a>
+        <a href="photos/chaar minaar.jpg" data-lightbox="models" data-title="caption7"><img src="photos/chaar minaar.jpg"></a>
+        <a href="photos/pangong-lake.jpg" data-lightbox="models" data-title="caption8"><img src="photos/pangong-lake.jpg"></a>
+        <a href="photos/hawa mahal.jpg" data-lightbox="models" data-title="caption9"><img src="photos/hawa mahal.jpg"></a>
+    </div>
+  </div>  
+  <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>
